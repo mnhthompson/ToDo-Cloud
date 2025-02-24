@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <script type="module" src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>To-Do List</h1>
+        
+        <!-- Input Area for New Task -->
         <div class="input-area">
-            <input type="text" id="taskInput" placeholder="Enter a task">
+            <input type="text" id="taskInput" placeholder="Add a new task">
             <button id="addTaskBtn">Add Task</button>
         </div>
-        <ul id="taskList"></ul>
+        
+        <!-- Task List Display -->
+        <ul id="taskList"></ul> <!-- This is where the tasks will be rendered -->
+
     </div>
 
-    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
